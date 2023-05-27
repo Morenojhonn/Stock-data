@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header id="header">
+    <nav class="menu">
+      <div class="logobox">
+          <h1 class="logo"><a href="#Stock">
+            Stock data
+          </a></h1>
+
+          <span class="btn-menu"><i class="fas fa-bars"></i></span>
+        </div>
+
+      <div class="list-container">
+          <ul class="lists">
+              <li><a href="#loguin" class="active">Inicio sesion</a></li>
+              <li><a href="#carrito">Carrito compras</a></li>
+              <li><a href="#Stock">Quienes somos</a></li>
+              <li><a href="#producto">Productos</a></li>
+          </ul>
+      </div>
+    </nav>
+    <!--<ul id="menulateral">
+      <li class="titulo1"><a href="#Stock">Stock data</a></li>
+      <li style="float:right"><a href="#loguin">Inicio sesion</a></li>
+      <li style="float:right"><a href="#carrito">Carrito compras</a></li>
+      <li style="float:right"><a href="#Stock">Quienes somos</a></li>
+      <li style="float:right"><a href="#producto">Productos</a></li>
+    </ul>-->
+    <figure class="img-header">v
+  </figure>
+  </header>
+  <main>
+    <section  class="Stock">
+      <div class="info" >
+        <h3>Stock data</h3>
+        <p>
+          Somos una empresa orgullosamente nacional, que se dedica a la comercialización de productos que buscan la satisfacción de nuestros clientes brindándoles la posibilidad de adquirirlos siempre a través de los mejores precios del mercado.
+          Stock data nace con una pequeña tienda en la localidad de san José del Guaviare, con el único objetivo de ser la empresa líder en el mercado brindando las mejores condiciones para cada cliente, llevando como estandarte la tasa de interés más baja del mercado y los mejores precios que se puedan brindar.
+          Empezamos con la venta de computadores y rápidamente nos expandimos para ofrecer, sillas gamer, asesprios para pc, impresoras, tecnología, entre otros, siempre ofreciendo marcas de calidad y el mejor servicio a los mejores precios del mercado.
+        </p>
+      </div>
+    </section>
+
+    <section class="producto">
+      <h4>Productos
+        <form >
+          <select name="tipo" id="tipo">
+            <option value="0">Selecione un producto</option>
+            <option value="1">acesorios</option>
+            <option value="2">portatil</option>
+            <option value="3">pc de mesa</option>
+          </select>
+          <input type="text" id="nombre" name="nombre" placeholder="Buscar Produto" >
+          <input type="submit" value="Enviar">
+        </form>
+      </h4>
+      <div class="lisProducto">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Imagen</th>
+              <th scope="col">Descripcion</th>
+              <th scope="col">opciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>CPU HP-Lenovo</th>
+              <th><img src="img1.jpg" width="200" height="141"></th>
+              <td>
+                Intel Core2 Duo Processor<br>
+                RAM: 4 GB DDR3 Memory<br>
+                Hard Drive: 500 GB<br>
+                Video: Integrated Graphics<br>
+                Puertos: USB, VGA and More<br>
+                17" LCD Monitor (Diferentes marcas)
+              </td>
+              <td>
+                <a href="#informacion">Mas información</a>
+                <a href="#carrito">Comprar</a>
+              </td>
+            </tr>
+            <tr>
+              <th>TORRE SMART 340</th>
+              <th><img src="img2.jpg" width="200" height="141" ></th>
+              <td>
+                TORRE SMART 340<br>
+                FUENTE JAWAN 600W<br>
+                BOARD AMD A320M <br>
+                PROCESADOR AMD RYZEN 5 5600G<br>
+                GRAFICOS INTEGRADOS AMD RADEON VEGA 7<br>
+                RAM DDR4 16GB BLINDADA 3200MHZ 1X16GB (Ó 2X8GB)<br>
+                DISCO DURO 1TB (Ó SSD 240GB)
+              </td>
+              <td><a href="#informacion">Mas información</a>
+                <a href="#carrito">Comprar</a></td>
+            </tr>
+            <tr>
+              <th>TORRE GAMERs</th>
+              <th>
+                <img src="img3.jpg" width="200" height="141">
+              </th>
+              <td>Este es el computador gamer mas económico del mercado colombiano, con la mejor relación calidad/precio. Sus características logran uno de los mejores rendimientos</td>
+              <td><a href="#informacion">Mas información</a>
+                <a href="#carrito">Comprar</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="carrito">
+      <h4>Carito</h4>
+      <table class="tabla_carrito">
+        <tbody>
+          <tr>
+            <th  height="18" style="width: 50;height: 50;">
+              CPU HP-Lenovo
+              <img src="img1.jpg" width="100" height="80">
+            </th>
+            <td  height="18" style="width: 50;height: 50;">
+              Intel Core2 Duo Processor<br>
+              RAM: 4 GB DDR3 Memory<br>
+              Hard Drive: 500 GB<br>
+              Video: Integrated Graphics<br>
+              Puertos: USB, VGA and More<br>
+              17" LCD Monitor (Diferentes marcas)
+
+              
+            </td>
+            <td style="text-align: center;">
+              <div>$1.500.000</div><br>
+              <button>+</button>1 <button>-</button><br>
+              <a href="">Eliminar</a>
+              <a href="">Comprar ahora</a>
+              <a href="">Ver mas productos</a>
+            </td>
+            <td rowspan="3" style="width: 30%;text-align: center;">
+              <h2>Datos de compra</h2>
+              <h3>Cantidad Productos</h3>
+              <h3>3</h3>
+              <h3>Envio producto</h3>
+              <h3>2.5000</h3>
+              <h3>Total compra</h3>
+              <h3>4.500.000</h3>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              TORRE SMART 340
+              <img src="img2.jpg" width="100" height="80" >
+            </th>
+            <td>
+              TORRE SMART 340<br>
+              FUENTE JAWAN 600W<br>
+              BOARD AMD A320M <br>
+              PROCESADOR AMD RYZEN 5 5600G<br>
+              GRAFICOS INTEGRADOS AMD RADEON VEGA 7<br>
+              DISCO DURO 1TB (Ó SSD 240GB)
+            </td> 
+            <td style="text-align: center;">
+              <div>$1.500.000</div><br>
+              <button>+</button>1 <button>-</button><br>
+              <a href="">Eliminar</a>
+              <a href="">Comprar ahora</a>
+              <a href="">Ver mas productos relebante</a>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              TORRE GAMERs
+              <img src="img3.jpg" width="100" height="80">
+            </th>
+            <td>Este es el computador gamer mas económico del mercado colombiano,<br>
+               con la mejor relación calidad/precio.<br>
+               Sus características logran uno de los mejores rendimientos</td>
+            <td style="text-align: center;">
+              <div>$1.500.000</div><br>
+              <button>+</button>1 <button>-</button><br>
+              <a href="">Eliminar</a>
+              <a href="">Comprar ahora</a>
+              <a href="">Ver mas productos relebante</a>
+            </td>       
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="informacion" >
+      <!--style="border: 2px solid #d61616;height: 570px;
+       style="text-align: center;border: 1px solid #000000;width: 200px;"-->
+      <h4>Informacion</h4>
+      <h3>TORRE SMART 340</h3>
+      <div class="tabla_informacion">
+          <div >
+            <img src="img2.jpg" width="150" height="150">
+            <img src="img1.jpg" width="150" height="150">
+            <img src="img3.jpg" width="150" height="150">
+          </div>
+          <div>
+            <iframe width="600" height="300" src="https://www.youtube.com/embed/85RpWiETiLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div><br>
+          <div>
+            <h2>Datos comprador</h2>
+            <h2>Productos  TORRE SMART 340</h2>
+            <h2>Envio producto: xxxxx</h2>
+            <h2>Iva:xxxxx</h2>
+            <h2>Total compra:xxxxxx</h2>
+          </div>
+      </div>
+    </section>
+
+    <section class="loguin">
+      <h4>Loguin</h4>
+      <div class="logincontenedor">
+        <div id="contenedorcentrado">
+          <div id="login">
+            <form id="loginform">
+              <label for="usuario">Usuario</label>
+              <input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
+              <label for="password">Contraseña</label>
+              <input id="password" type="password" placeholder="Contraseña" name="password" required>
+              <button type="submit" title="Ingresar" name="Ingresar">Login</button>
+            </form>
+          </div>
+          <div id="derecho">
+            <div class="titulo">
+                Bienvenido
+            </div>
+            <hr>
+            <div class="pie-form">
+              <a href="#">¿Perdiste tu contraseña?</a>
+              <a href="#">¿No tienes Cuenta? Registrate</a>
+              <hr>
+              <a href="#">« Volver</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+  </main>
+  <footer>
+    <p>JHON ALEXANDER MORENO MELO</p>
+  </footer>
+  
+<script src="https://kit.fontawesome.com/35db202371.js" crossorigin="anonymous"></script>
+<script>
+  // Variable
+const btnMenu = document.querySelector('.btn-menu');
+const menu = document.querySelector('.list-container');
+let on_off = true;
+ 
+
+// Responsive Menu
+btnMenu.addEventListener('click', () => {
+     
+    if (on_off) {
+       menu.style.left = "0";
+       menu.style.transition = "300ms";
+       on_off = false;
+    }else{
+        on_off = false;
+        menu.style.left = "-100%";
+        menu.style.transition = "300ms";
+        on_off = true;
+    }
+
+});
+ 
+</script>
+</body>
+
+</html>

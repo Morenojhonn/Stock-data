@@ -1,0 +1,272 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background: #ffff;
+  font-family: 'Lora', serif;
+  overflow-x: hidden;
+}
+
+#header{
+  position: relative;
+  width: 100%;
+}
+.menu{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #c31818;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index:9999;
+}
+.btn-menu{display: none;}
+.menu .logobox{margin-left: 30px;}
+.menu .logobox h1 > a{
+  text-decoration: none;
+  color:#fff;
+  font-size: 30px;
+  font-weight: 400;
+}
+.menu .logobox h1 > a > i{color:#f8b30e; margin-right: 10px;}
+.menu .list-container{margin-right: 30px;}
+.menu .list-container .lists{display: flex;}
+.menu .list-container .lists li{list-style: none;}
+.menu .list-container .lists li a{
+  text-decoration: none;
+  color:#fff;
+  font-size: 19px;
+  margin:0px 7px;
+  padding: 5px;
+  border-radius: 3px;
+  transition: 300ms;
+}
+.menu .list-container .lists li a:hover{color:#f8b30e;}
+.menu .list-container .lists li a.active{color:#f8b30e;}
+
+.Stock{
+  width: 100%; 
+  background: #1B9CFC;
+  padding:10px;
+
+}
+.Stock .info{
+  color: #ffffff;
+  width: 100%;
+    margin-top: 100px;
+    
+}
+.Stock .info h3{  
+  text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+.Stock .info p { 
+  width: 80%;
+   margin:50px auto;
+   text-align: center;
+   font-size: 19px;
+   line-height: 40px;
+}
+
+.producto{
+  width: 100%;
+  margin-top: 100px;
+}
+.producto h4{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400; 
+}
+.producto .lisProducto{
+  width: 90%;
+  margin:30px auto;
+  display: flex;
+  justify-content: center;
+}
+.carrito{
+  width: 100%;
+  margin-top: 100px;
+}
+.carrito h4{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400; 
+}
+.carrito .tabla_carrito{
+  width: 90%;
+  margin:30px auto;
+  display: flex;
+  justify-content: center;
+}
+.informacion{
+  width: 100%; 
+  margin-top: 100px;
+}
+.informacion h4{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400; 
+}
+.informacion h3{
+  background: #297bee;
+  color: #ebeff1;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400; 
+}
+.informacion .tabla_informacion{
+  width: 90%;
+  margin:50px auto;  
+  text-align: center;
+  display: flex; 
+  justify-content: center;
+} 
+.loguin{
+  width: 100%;
+  margin-top: 100px;
+}
+.loguin h4{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400; 
+}
+.loguin .logincontenedor{
+  width: 90%;
+  margin:30px auto;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  
+  background-image: url(img4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+table{
+	width:100%; 
+	border-collapse:collapse;
+  
+}
+td{
+	border:2px solid black;
+}
+th{
+	border:2px solid black;
+}
+#loguin
+{
+  width: auto;
+  height:auto;
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(234, 233, 242);
+} 
+#contenedorcentrado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+  background-color: #297bee;
+}
+#login {
+  width: 100%;
+  max-width: 320px;
+  min-width: 320px;
+  padding: 30px 30px 50px 30px;
+  background-color: #719192; 
+   
+}
+#login input {  
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+#login button { 
+  color:#1b262c;
+  width: 100%;
+  height: 40px; 
+  
+  margin-top: 10px;
+}
+#login button:hover {
+  background-color: #3c4245;
+  color:#dfcdc3;
+}
+#derecho {
+  text-align: center;
+  width: 100%;
+  opacity: 0.70;
+  padding:20px 20px 20px 50px;
+  box-sizing: border-box;
+}
+footer{
+  width: 100%;
+  height: 60px;
+  margin-top: 100px;
+  background: #000;
+}
+footer p{
+  text-align: center;
+  line-height: 60px;
+  color:#fff;
+}
+@media only screen and (max-width:804px) {
+  /** navegacion menu **/
+  .btn-menu{
+      position: absolute;
+      top: 12px;
+      right: 30px;
+      display: block;
+      color:#fff;
+      font-size: 30px;
+      cursor: pointer;
+  }
+  .menu .list-container{
+      position: absolute;
+      top: 40px;
+      left: -100%;
+      width: 100%;
+      height: calc(80vh - 60px);
+      background: #000;
+      border-top: 3px solid #d31d1d;
+  }
+  .menu .list-container .lists{
+      display: block;
+      width: 90%;
+      margin:50px auto;
+  }
+  .menu .list-container .lists li{
+      display: flex;
+      justify-content: center;
+      border-bottom: 2px solid #cd2525;
+  }
+  .menu .list-container .lists li a{
+      margin:5px 0px;
+  }
+  .informacion .tabla_informacion{
+    width: 90%;
+    margin:50px auto;  
+    text-align: center;
+    display: block; 
+    justify-content: center;
+  } 
+}
+@media only screen and (max-width:560px) {
+  .Stock .producto {
+      display: block;
+      margin:0px;
+      padding:10px 0px;
+  }
+  .Stock .producto > div{margin:50px 30px;}
+  .Stock .productot > div{font-size: 55px;}
+}
